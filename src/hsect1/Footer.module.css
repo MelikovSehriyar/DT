@@ -1,0 +1,131 @@
+.footer {
+    background-color: #fff;
+    padding: 80px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  
+  .about, .links, .contact {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #7a7a7a;
+    line-height: 1.6;
+  }
+  
+  .subscribe {
+    margin-top: 40px;
+  }
+  
+  .subscribeForm {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .subscribeForm input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+  }
+  
+  .subscribeForm button {
+    background-color: #2d89ef;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .subscribeForm button:hover {
+    background-color: #1b5fa8;
+  }
+  
+  .linksColumns {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .linksColumns ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .linksColumns li {
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .linksColumns li:hover {
+    color: #2d89ef;
+  }
+  
+  .contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .icon {
+    color: #2d89ef;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .linksColumns {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .subscribeForm {
+      flex-direction: column;
+    }
+  
+    .subscribeForm input, .subscribeForm button {
+      width: 100%;
+      border-radius: 5px;
+    }
+  
+    .subscribeForm button {
+      margin-top: 10px;
+    }
+  }
+  
